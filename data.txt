@@ -1,0 +1,27 @@
+TABLE 1(Demand):
+
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+demand_floor INTEGER
+
+
+TABLE 2(Elevator Status):
+
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+demand_id INTEGER
+timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+current_floor INTEGER
+vacant BOOL
+
+
+TABLE 3(Demand analytics):
+
+id INTEGER PRIMARY KEY
+demand_id INTEGER
+demand_time DATETIME DEFAULT
+status_timediff DATETIME DEFAULT
+demand_timediff DATETIME DEFAULT
+floordiff INTEGER
+resting_floor INTEGER
+end_floor INTEGER
+
